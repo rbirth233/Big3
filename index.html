@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>Random Redirect</title>
+<script type="text/javascript">
+var urls = [
+  'https://www.credamo.com/answer.html#/s/vA7vimano',
+  'https://www.credamo.com/answer.html#/s/aAnmmeano',
+  'https://www.credamo.com/answer.html#/s/i2qeieano/'
+];
+
+function redirectToRandomPage() {
+  var randomIndex = Math.floor(Math.random() * urls.length);
+  window.location.href = urls[randomIndex];
+}
+</script>
+</head>
+<body>
+<button onclick="redirectToRandomPage()">Click to Random Jump!</button>
+</body>
+</html>
