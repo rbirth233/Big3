@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>Random Redirect</title>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-top: 0;
+  }
+</style>
+<script type="text/javascript">
+var urls = [
+  'https://www.credamo.com/answer.html#/s/vA7vimano',
+  'https://www.credamo.com/answer.html#/s/aAnmmeano',
+  'https://www.credamo.com/answer.html#/s/i2qeieano/'
+];
+
+function redirectToRandomPage() {
+  var randomIndex = Math.floor(Math.random() * urls.length);
+  window.location.href = urls[randomIndex];
+}
+</script>
+</head>
+<body>
+<button onclick="redirectToRandomPage()">点击跳转!</button>
+<p>感谢您的参与！</p>
+</body>
+</html>
+
+
